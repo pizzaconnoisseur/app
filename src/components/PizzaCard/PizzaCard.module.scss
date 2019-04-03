@@ -1,0 +1,65 @@
+
+.card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 20px;
+  padding-bottom: 30px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  background: white;
+  box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+
+  flex-basis: calc(50% - 7.5px);
+    width: 45%;
+    margin-top:15px;
+
+  @media (min-width: 320px) and (max-width: 600px){ 
+    flex-basis: 100%;
+    width: 100%;
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    text-transform: uppercase;
+  }
+
+  .toppings {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .toppings span {
+    padding: 3px;
+    margin: 5px;
+    border: 1px solid #D1D1D1;
+    background: #efefef;
+    border-radius: 4px;
+    display: inline-block;
+  }
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.filters > div {
+  box-sizing: border-box;
+  color: white;
+  padding: 10px;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-align: center;
+  border-radius: 4px;
+  text-transform: capitalize;
+  margin: 5px;
+  flex: 1 1 auto;
+}

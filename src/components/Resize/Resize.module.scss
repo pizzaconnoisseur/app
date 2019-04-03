@@ -1,0 +1,29 @@
+
+.container {
+  box-sizing: border-box;
+  padding-top: 56.25%;
+  position: relative;
+  width: 100%;
+
+  @media (min-width: 320px) and (max-width: 600px){ 
+    padding-top: calc(100%);
+  }
+
+  @media (min-width: 601px) and (max-width: 1200px){ 
+    padding-top: 75%;
+  }
+}
+
+.child {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  width: 100%;
+
+  @media (min-width: 320px) and (max-width: 600px){ 
+    top: 20px;
+  }
+}

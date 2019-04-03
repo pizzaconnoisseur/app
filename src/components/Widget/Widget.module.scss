@@ -1,0 +1,53 @@
+
+.card {
+  background: white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+  padding: 30px 20px;
+  padding-bottom: 60px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+
+  div {
+    flex-basis: 32%;
+    flex-grow: 1;
+
+    @media (min-width: 320px) and (max-width: 600px){ 
+      flex-basis: 45%;
+    }
+  }
+}
+
+.header {
+  align-items: flex-start;
+  display: flex;
+
+  h3, h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-right: 7px;
+  }
+
+  h4 {
+    color: #424242;
+    font-weight: 300;
+  }
+
+  select {
+    background-color:#efefef;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    border:0;
+    font-size: inherit;
+    outline:0;
+    padding: 6px;
+    position: relative;
+    text-align:center;
+    top: -6px;
+  }
+}
